@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="presentation">
+            <button id="btnMode" class="btn">Mode</button>
+            <h1 id="title">Robots Shop</h1>
+            <img src="./img/robot.jpg" alt="robot yellow" class="images">
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="contenedorProductos"></div>
+        
+        <h2 class="description">Shopping Cart</h2>
+        <h2>The total purchase is <span id="total"></span></h2>
+        <button class="btn btnAdd" id="verCarrito">See Small Car</button>
+        <button class="btn btnEliminate" id="vaciarCarrito">Empty Cart</button>
+        <button class="btn btnAdd" id="finish">Finish Order</button>
+        <div id="contenedorCarrito"></div>
+
+
+        <p class="list description">Contacts</p>
+        <form id="formulario">
+            <fieldset>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <br>
+                <div>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <br>
+                <button class="btn btnAdd" id="sendForm">Submit</button>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+    
+    
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
