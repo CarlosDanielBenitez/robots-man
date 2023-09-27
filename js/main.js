@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Tu código JavaScript aquí
+  
+  
  class Robot {
    constructor(id, name, precio, img) {
      this.id = id;
@@ -214,22 +218,6 @@ finish.addEventListener("click", () =>{
   })
 
 
-  const btnMode = document.getElementById("btnMode");
-  btnMode.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("mode", "dark");
-    }
-    else{
-      localStorage.setItem("mode", "light");
-    }
-  });
 
-  const mode = localStorage.getItem("mode");
-  if (mode === "dark"){
-    document.body.classList.add("dark");
-  }
-  else{
-    document.body.classList.remove("dark");
-  }
 
+});

@@ -7,10 +7,16 @@
     <title>Robot Shop</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
+
+    
   </head>
 
   <body>
@@ -22,8 +28,8 @@
     </div>
     <header>
       <div id="presentation">
-        <button id="btnMode" class="btn">Mode</button>
-        <h1 id="title">Robots Shop</h1>
+        
+        <h1 id="title" class="animate__swing" >Robots Shop</h1>
         <img src="./img/robot.jpg" alt="robot yellow" class="images" />
       </div>
     </header>
@@ -44,7 +50,36 @@
 
     
     </main>
-    <footer></footer>
+    <footer id="contacto"
+      <p class="list description">Contacts</p>
+      <form id="formulario">
+        <fieldset>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+          </div>
+          <br />
+          <div>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" />
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" />
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" />
+          </div>
+          <br />
+          <button class="btn btnAdd" id="sendForm">Submit</button>
+        </fieldset>
+      </form>
+    </footer>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
